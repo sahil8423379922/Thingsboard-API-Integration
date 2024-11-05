@@ -1,0 +1,1 @@
+Integration of thingsboard API to device max platform
