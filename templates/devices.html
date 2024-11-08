@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devices</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .device {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Devices</h1>
+    <div id="devices">
+        {% for device in devices %}
+        <div class="device">
+            <h2>{{ device.name }}</h2>
+            <p>ID: {{ device.id }}</p>
+            <p>Type: {{ device.type }}</p>
+            <p>Label: {{ device.label }}</p>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
